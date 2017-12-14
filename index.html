@@ -13,13 +13,60 @@
     </head>
     <body class="container-fluid">
       <h1>Example</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+      <div class='top'>
+      <!-- title -->
+      <h1 class='title'>
+      Current Weather
+    </h1>
+    <h2 id='today-is'>
+    </h2>
+      <!-- end title -->
+    </div>
+      <!-- container -->
+      <div class='container'>
+        <!-- location info -->
+        <div class='location-info'>
+          <p class='current-location'>
+        </p>
+          <div id='map'>
+            <img id="loading" src="https://bloggersclub.net/assets/img/loading.gif">
+          </div>
+        </div>
+        <!-- end location info -->
+        <!-- weather info -->
+        <div class='weather-info'>
+          <div class='one-div-to-rule-them-all'>
+            <div class='non-search-container'>
+              <div class='temp-container'>
+                <h2 class='temp-display'>
+            </h2>
+                <!-- end temp -->
+                <button id='c-f'>
+          change to F
+        </button>
+              </div>
+              <!-- end temp-container -->
+              <div class='weather-display'>
+                <img id='weather-icon'>
+                <p id='descrip'>description here</p>
+              </div>
+              <!-- end weather-display -->
+            </div>
+            <!-- end non-search-container -->
+            <form class='search-bar'>
+              <input type="text" id="city" placeholder="New City..."></input>
+              <button type="submit" id="submit" class="text-center">.</button>
+            </form>
+            <!-- end search-bar -->
+          </div>
+          <!-- end one div -->
+        </div>
+        <!-- end weather info -->
+      </div>
+      <!-- end container -->
+      <div class='credit'>
+        <h3>Coded by Derek McIntire</h3>
+      </div>
+      <script
     </body>
 </html>

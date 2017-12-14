@@ -1,2 +1,195 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+/*set-up*/
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #EDEDED;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.top {
+  color: #3B3738;
+}
+
+.title {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1vmax;
+}
+
+#today-is {
+  margin-bottom: 5px;
+}
+
+/*main-container*/
+.container {
+  width: 75%;
+  max-width: 1000px;
+  display: flex;
+  margin-top: 0;
+}
+
+/*location-info*/
+.location-info {
+  background-color: #3B3738;
+  color: white;
+  width: 70%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 3px solid #3B3738;
+}
+
+.current-location {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.75px;
+  margin-bottom: 5px;
+}
+
+#loading {
+  width: 10%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #FDF3E7;
+  display: flex;
+  align-items: center;
+}
+
+/*weather-info*/
+.weather-info {
+  background-color: #a7cdf2;
+  color: #3B3738;
+  width: 30%;
+  min-height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #3B3738;
+}
+
+.temp-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temp-display {
+  font-size: 65px;
+  text-align: center;
+}
+
+#c-f {
+  background-color: #f18d00;
+  border: 2px solid #f18d00;
+  padding: 3px;
+  color: #EDEDED;
+  font-size: 16px;
+}
+
+.weather-display {
+  width: 50%;
+  padding: 2%;
+}
+
+#weather-icon {
+  width: 70px;
+  margin: 5px;
+}
+
+.search-bar {
+  width: 90%;
+  min-width: 110px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+input {
+  padding-left: 5px;
+}
+
+
+#city {
+  line-height: 30px;
+  width: 90%;
+}
+
+#submit {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin-left: -40px;
+  border: none;
+  background: url('https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/search-128.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.credit {
+  font-size: 12px;
+  font-family: 'Slabo 27px', serif;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+/*media-queries*/
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    width: 70%;
+    border: 0;
+  }
+  .location-info {
+    display: block;
+    width: 100%;
+  }
+  .map-container {
+    width: 100%;
+  }
+  #map {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  .weather-info {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .non-search-container {
+    display: flex;
+    justify-content: center;
+  }
+  .temp-display {
+    font-size: 45px;
+  }
+  .temp-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    height: 60vh;
+    min-height: 400px;
+  }
+}
